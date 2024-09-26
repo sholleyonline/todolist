@@ -21,7 +21,7 @@
          <li class="list-item">{{ item.text}} 
             {% if item.completed  %}
             (completed)
-            {% endif %}</li>
+            {% endif %}  <a href="{% url "delete_item" item.id %}" class="delete-btn">X</a></li>
          {% endfor %}
     </ul>
 
